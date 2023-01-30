@@ -14,11 +14,11 @@ Requirements:
 You can get some ideas how your application may look like on the [Google Finance](https://www.google.com/finance/) page.
 
 As a bonus you can implement (please describe implemented bonus functionality in this file):
-- any additional visual effects to highlight positive or negative changes in the prices
-- the possibility to switch on/off tickers by user
-- the possibility to specify interval time by user
-- the possibility to add/remove ticker from watching group
-- any additional functionality you consider useful
+- DONE: any additional visual effects to highlight positive or negative changes in the prices (when the price is changing the style of the price block is also changing)
+- DONE: the possibility to switch on/off tickers by user (you can click on the name of the ticker before the chart to switch it on/off)
+- DONE: the possibility to specify interval time by user (click the buttons before the chart to change the interval)
+- DONE: the possibility to add/remove ticker from watching group
+- DONE: any additional functionality you consider useful (I added ability to search items in tickers list)
 
 You should use the next technologies:
 - React (preferable with hooks)
