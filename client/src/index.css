@@ -1,0 +1,201 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #2b2c3a;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.low {
+  color: #d9454f;
+}
+
+.high {
+  color: #29ac3a;
+}
+
+.BaseLayout {
+  box-shadow: 0px 0px 4px 0px rgb(0 0 5 / 10%);
+  width: 1200px;
+  background: #f0f2f0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.BaseLayout > div {
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.Chart {
+  background: #ffffff;
+}
+
+.TickerData {
+  background: #d5d7ea;
+}
+
+.TickerData > ul {
+  margin: 0;
+  list-style: none;
+  padding-left: 90px;
+}
+
+.TickerData .ticker {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 0;
+  margin-top: 25px;
+}
+
+.TickerData .exchange {
+  margin: 0;
+  font-weight: 200;
+  font-size: 13px;
+}
+
+.TickerData .price {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.TickerData .details {
+  margin: 5px 0px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.Chart .btns {
+  display: block;
+  float: right;
+  margin-bottom: 5px;
+}
+
+.Chart .btns input[type="submit"] {
+  border: 1px solid #e5e5e5;
+  border: none;
+  background: #e5e5e5;
+  font-size: 10px;
+  font-weight: 300;
+  margin-left: 6px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.Chart .btns input[type="submit"].active {
+  background: black;
+  color: white;
+}
+
+.TickersList {
+  background: #20202f;
+  min-height: 440px;
+}
+
+.TickersList > input {
+  margin-left: 33px;
+  margin-top: 22px;
+  padding: 12px 15px;
+  min-width: 280px;
+  background: white;
+  border: 1px solid rgb(121 120 127);
+  border-radius: 3px;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 16px;
+}
+
+.TickersList > ul,
+.LikedTickers > ul {
+  margin: 0;
+  margin-left: 33px;
+  padding: 0;
+  list-style: none;
+}
+
+.TickersList > ul li .info:hover {
+  box-shadow: 0px 0px 0px 1px white;
+}
+
+.TickersList > ul li,
+.LikedTickers > ul li {
+  display: flex;
+  margin-bottom: 6px;
+}
+
+.TickersList > ul li .info,
+.LikedTickers > ul li .info {
+  background: white;
+  padding: 12px 15px;
+  width: 160px;
+  font-size: 13px;
+  font-weight: 400;
+  border-radius: 4px;
+  margin-right: 16px;
+  box-sizing: border-box;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.TickersList > ul li .star {
+  color: #ecdd11f5;
+  float: right;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 12px 0;
+}
+
+.TickersList > ul li .toggleChart {
+  color: white;
+  padding: 12px 0;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.LikedTickers {
+  background: #f3f3f3;
+}
+
+.LikedTickers h4 {
+  font-size: 19px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-left: 33px;
+  margin-top: 22px;
+  margin-bottom: 33px;
+}
+
+.LikedTickers .trash {
+  color: #d9454f;
+  float: right;
+  cursor: pointer;
+  padding: 12px 0;
+}
+
+.LikedTickers > ul li .info{
+  border: 1px solid #f0f2f0;
+  cursor: pointer;
+  width: 260px;
+}
+
+.LikedTickers > ul li .info:hover {
+  border: 1px solid #1f202f;
+}
+
+.LikedTickers .items {
+  margin-bottom: 50px;
+}
